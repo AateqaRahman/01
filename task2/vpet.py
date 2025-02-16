@@ -1,12 +1,12 @@
 class VirtualPet:
     def __init__(self,name,energy=10,hunger=0):
         self.name_of_pet = name 
-        self.energ_levels = energy
+        self.energy_levels = energy
         self.hunger_levels = hunger
     
     def play(self):
         if self.energy_levels < 2:
-            print ("TOO tired to play")
+            print ("Too tired to play")
         else:
             self.energy_level -= 2
             self.hunger_levels += 2
