@@ -22,8 +22,3 @@ class VirtualPet:
         
         
 pass
- pet = VirtualPet("Timmy")
- print (pet)
-
- pet.play()
- print(pet)
