@@ -8,7 +8,7 @@ class VirtualPet:
         if self.energy_levels < 2:
             print ("Too tired to play")
         else:
-            self.energy_level -= 2
+            self.energy_levels -= 2
             self.hunger_levels += 2
 
     def feed(self):
