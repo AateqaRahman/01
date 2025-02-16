@@ -6,7 +6,7 @@ class VirtualPet:
     
     def play(self):
         if self.energy_levels < 2:
-            print ("Too tired to play")
+            print ("TOO tired to play")
         else:
             self.energy_levels -= 2
             self.hunger_levels += 2
@@ -18,7 +18,7 @@ class VirtualPet:
         self.energy_levels += 10
 
     def __str__(self):
-        return f"{self.name_of_pet} with {self.energy_levels} energy points and {self.hunger_levels} hunger level"
+        return f"{self.name_of_pet} with {self.energy_levels} energy level and {self.hunger_levels} hunger level"
         
         
 pass
