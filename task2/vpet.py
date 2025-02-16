@@ -18,7 +18,12 @@ class VirtualPet:
         self.energy_levels += 10
 
     def __str__(self):
-        return f"{self.name_of_pet} with {self.energ_levels} energy level and {self.hunger_levels} hunger level"
+        return f"{self.name_of_pet} with {self.energy_levels} energy level and {self.hunger_levels} hunger level"
         
         
 pass
+ pet = VirtualPet("Timmy")
+ print (pet)
+
+ pet.play()
+ print(pet)
