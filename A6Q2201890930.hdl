@@ -18,7 +18,7 @@ CHIP A6Q2201890930 {
 
     And (a=a, b=nb,, out=e1); 
     And (a=nc, b=d, out=e2);
-    And (a=e1, b=e2, out=e)
+    And (a=e1, b=e2, out=e);
 
     And (a=a, b=nb, out=r1);
     And (a=c, b=d, out=r2);
