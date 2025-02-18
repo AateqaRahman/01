@@ -18,7 +18,7 @@ CHIP DecoderSegment201890930 {
     Or(a=e1,b=NotD,out=e);
 
     Or(a=a,b=NotB,out=r1);
-    Or(a=c,b=NotD,outr2);
+    Or(a=c,b=NotD,out=r2);
     Or(a=r1,b=r2,out=r);
 
     And(a=q,b=w,out=d1);
