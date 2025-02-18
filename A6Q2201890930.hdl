@@ -1,33 +1,27 @@
 CHIP A6Q2201890930 {
     IN a, b, c, d;
     OUT f;
-    
     PARTS:
     Not (in=a, out=na);
     Not (in=b, out=nb);
     Not (in=c, out=nc);
     Not (in=d, out=nd);
-
     And (a=na, b=nb, out=q1);
     And (a=nc, b=d, out=q2);
     And (a=q1, b=q2, out=q);
-
     And (a=na, b=b, out=w1);
     And (a=c, b=nd, out=w2);
     And (a=w1, b=w2, out=w);
-
     And (a=a, b=nb,, out=e1); 
     And (a=nc, b=d, out=e2);
     And (a=e1, b=e2, out=e);
-
     And (a=a, b=nb, out=r1);
     And (a=c, b=d, out=r2);
     And (a=r1, b=r2, out=r);
-
     And (a=a, b=b,out=t2);
     And (a=nc, b=d, out=t1);
     And (a=t1, b=t2, out=t);
-
+    
     Or (a=q, b=w, out=f1);
     Or (c=e, d=r, out=f2);
     Or (a=f1, b=f2, out=f3);
