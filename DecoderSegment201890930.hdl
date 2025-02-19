@@ -10,7 +10,7 @@ CHIP DecoderSegment201890930 {
 
     And (a=NotA,b=NotB,out=q);
 
-    And (a=NotC,b=NotD,out=w);
+    And (a=NotB,b=NotD,out=w);
 
     And (a=C,b=D,out=e1);
     And (a=e1,b=NotA,out=e);
@@ -18,8 +18,8 @@ CHIP DecoderSegment201890930 {
     And (a=A,b=D,out=r1);
     And (a=r1,b=NotC,out=r);
 
-    And (a=NotB,b=NotD,out=t1);
-    And (a=t1,b=A,out=t);
+    And (a=NotC,b=NotD,out=t1);
+    And (a=t1,b=NotA,out=t);
 
     Or(a=q,b=w,out=f1);
     Or(a=e,b=r,out=f2);
