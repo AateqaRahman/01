@@ -24,5 +24,4 @@ CHIP DecoderSegment201890930 {
     And(a=q,b=w,out=d1);
     And(a=e,b=r,out=d2);
     And(a=d1,b=d2,out=d);
-
 }
